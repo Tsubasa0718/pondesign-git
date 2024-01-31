@@ -1,0 +1,64 @@
+// button
+.c-button{
+    display: inline-block;
+    position: relative;
+    border-radius: 53.125rem;
+    font-size: 0.875rem;
+    font-weight: bold;
+    padding: 1rem 5.3125rem 1rem 5.3125rem;
+    background-image: linear-gradient(to right, #7633a4 0%, #250d65 51%, #7633a4 100%);
+    background-size: 200% auto;
+    color: var(--color-base-);
+    transition: .5s;
+    letter-spacing: .07em;
+}
+.c-button:hover{
+    text-decoration: none;
+    background-position: right center;
+}
+.c-button::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-left: 7px solid #fff;  /* ここで三角形の色を指定します */
+    right: 20px;  /* 三角形の位置を設定、ここではボタンの右端に配置 */
+    top: 50%;
+    transform: translateY(-50%);
+    transition: .5s;
+}
+
+// 透明ボタン
+
+.c-button-transparent{
+    display:inline-block ;
+    position: relative;
+    border: 1px solid #fff;
+    padding: 1rem 4.5rem 1rem 4.5rem;
+    font-size: 0.875rem;
+    border-radius: 53.125rem;
+    margin-top: 3.125rem;
+    transition: .5s;
+}
+.c-button-transparent:after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-left: 7px solid #fff;  /* ここで三角形の色を指定します */
+    right: 20px;  /* 三角形の位置を設定、ここではボタンの右端に配置 */
+    top: 50%;
+    transform: translateY(-50%);
+    transition: .5s;
+}
+.c-button-transparent:hover::after{
+    right: 15px;
+}
+.c-button-transparent:hover{
+    opacity: .7;
+}
+

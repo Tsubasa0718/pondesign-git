@@ -1,0 +1,16 @@
+@keyframes pathmove{
+	0%{
+		height:0;
+		top:70px;
+		opacity: 0;
+	}
+	30%{
+		height:70px;
+		opacity: 1;
+	}
+	100%{
+		height:0;
+		top: 150px;
+		opacity: 0;
+	}
+}

@@ -1,0 +1,29 @@
+@use"../responsive/_responsive.scss";
+
+.l-footer{
+  
+    background-color: var(--color-footer-bg);
+    &_list{
+        display: flex;
+        justify-content: center;
+        color: var(--color-footer);
+        padding: 3.75rem 1.875rem;
+        &_item{
+            font-size: 0.75rem;
+            font-weight: 100;
+        }
+        &_item:not(:first-of-type){
+            margin-left: 1.25rem;
+        }
+    }
+    &_copyright{
+        text-align: center;
+        padding-bottom:  3.75rem;
+        small{
+            color: var(--color-copy);
+            font-weight: 100;
+            font-size: 0.625rem;
+            letter-spacing: 5%;
+        }
+    }
+}
