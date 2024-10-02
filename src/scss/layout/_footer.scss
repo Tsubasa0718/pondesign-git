@@ -1,0 +1,37 @@
+@use "../foundation/_mixin.scss" as *;
+.l-footer{
+    padding: px-to-rem(60px) 0;
+    background-color: #120E19;
+    color: var(--color-text);
+    &__list{
+        display: flex;
+        justify-content: center;
+        @include responsive("phone"){
+          flex-wrap: wrap;
+          margin-bottom: -10px;
+        }
+    }
+    &__item{
+        font-size: px-to-rem(12px);
+     }
+    &__item:not(:first-of-type){
+        margin-left: px-to-rem(20px);
+    }
+    &__copy,
+    &__link{
+        text-align: center;
+    }
+    &__copy{
+        margin-top: px-to-rem(30px);
+        color: #A798B7;
+    }
+    &__link{
+        margin-top: px-to-rem(30px);
+        a{
+            transition: .3s;
+        &:hover{
+            text-decoration: underline 1px solid #fff;
+        }
+        }
+    }
+}

@@ -1,0 +1,19 @@
+@use"../../foundation/_mixin.scss" as *;
+
+.p-works-page{
+    padding: px-to-rem(70px) 0;
+  &__wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: px-to-rem(30px);
+    @include responsive("phone"){
+        grid-template-columns: repeat(1, 1fr)
+    }
+}
+&__caption{
+  margin-top: px-to-rem(15px);
+  text-align: center;
+  line-height: 1.8;
+  letter-spacing: 0.05em;
+}
+}

@@ -1,0 +1,142 @@
+@use"../../foundation/_mixin.scss" as *;
+// cta-btn
+.c-btn{
+    position: relative;
+    display: inline-block;
+    width: 220px;
+    text-align: center;
+    font-size: px-to-rem(14px);
+    font-weight: bold;
+    padding:  px-to-rem(18px) 0;
+    line-height: 1.4;
+    letter-spacing: .05em;
+    color: var(--color-text);
+    border-radius: 50px;
+    background-image: linear-gradient(to right, #7633a4 0%, #250d65 51%, #7633a4 100%);
+    background-size: 200% auto;
+    transition: .3s;
+    &::after{
+     content: "";
+     position: absolute;
+     top: 50%;
+     right: 1.5em;
+     transform: translateY(-50%);
+     width: 0;
+     height: 0;
+     border-style: solid;
+     border-top: 7px solid transparent;
+     border-bottom: 7px solid transparent;
+     border-left: 7px solid #fff;
+     border-right: 0;
+     transition: .3s;
+     }
+     &:hover::after{
+        right: 1.2em;
+     }
+     &:hover{
+        background-position: right center;
+     }
+    }
+.c-btn--transparent{
+    @extend .c-btn;
+    background-image: none;
+    border: 1px solid var(--color-text);
+}
+// menubtn
+.c-menubtn{
+ position: fixed;
+ top: 0;
+ right: 0;
+ z-index: 1000;
+ width: 50px;
+ height: 50px;
+ cursor: pointer;
+ span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    width: 60%;
+    height: 2px;
+    background-color: #fff;
+    transition: all 0.3s ease;
+}
+ span:nth-child(1) {
+  top: 35%; 
+}
+ span:nth-child(2) {
+  top: 50%; 
+}
+ span:nth-child(3) {
+  top: 65%; 
+}
+&.open{
+    span:nth-child(1) {
+      transform: translate(-50%, -50%) rotate(45deg);
+      top: 50%;
+      }
+       span:nth-child(2) {
+        opacity: 0; 
+      }
+       span:nth-child(3) {
+        transform: translate(-50%, -50%) rotate(-45deg);
+            top: 50%;
+      }
+}
+}
+
+// side-btn
+.c-side-btn{
+ position: fixed;
+ right: px-to-rem(45px);
+ bottom: px-to-rem(45px);
+ background-color: #fff;
+ border-radius: 50%;
+ box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+ width: 50px;
+ height: 50px;
+ opacity: 0;
+ visibility: hidden;
+ transition: .3s;
+ @include responsive("phone"){
+  right: px-to-rem(20px);
+  bottom: px-to-rem(10px);
+ }
+ span{
+  position: relative;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  display: inline-block;
+  width: 2px;
+  height: 15px;
+  border-radius: 9999px;
+  background-color: var(--color-main);
+  
+  &::before,
+  &::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: calc(50% - 1px);
+    width: 2px;
+    height: 12px;
+    border-radius: 9999px;
+    background-color: var(--color-main);
+    transform-origin: 50% 1px;
+  }
+  &::before{
+    transform: rotate(45deg);
+  }
+  &::after{
+    transform: rotate(-45deg);
+  }
+}
+&.visible{
+  opacity: 1;
+  visibility: visible;
+}
+}
+

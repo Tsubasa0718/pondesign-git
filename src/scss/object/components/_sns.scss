@@ -1,0 +1,8 @@
+@use "../../foundation/_mixin.scss" as *;
+
+.c-sns{
+    margin-top: px-to-rem(40px);
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}

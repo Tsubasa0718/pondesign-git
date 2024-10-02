@@ -1,0 +1,39 @@
+@use "../../foundation/_mixin.scss" as *;
+
+.p-company{
+    text-align: center;
+    padding: 0;
+    background-image: url(/dist/images/bg_company.webp);
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    &__inner{
+       padding: space-to-clamp(50,100,375,1440) 0;
+    }
+  
+    &__message-heading{
+        margin-top: px-to-rem(30px);
+        display: inline-block;
+    }
+    &__message-heading--textunderline{
+        font-size: space-to-clamp(32,40,375,1440);
+        font-weight: bold;
+        background: linear-gradient(transparent 70%, #f5f534 0%)
+    }
+    &__message-title{
+       font-size: space-to-clamp(24,32,375,1440);
+       font-weight: bold;
+       line-height: 1.8;
+       letter-spacing: .05em;
+       color: var(--color-main);
+    }
+    &__message-text{
+        font-size: space-to-clamp(14,15,375,1440);
+        margin-top: px-to-rem(40px);
+        line-height: 1.8;
+        letter-spacing: .05em;
+    }
+    &__btn{
+        margin-top: px-to-rem(30px);
+    }
+}

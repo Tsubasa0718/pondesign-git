@@ -1,0 +1,37 @@
+@use"../../foundation/_mixin.scss" as *;
+
+.p-contact{
+    padding: space-to-clamp(60,70,375,1440,) 0;
+    background-color: #F0F0F0;
+    &__wrapper{
+        text-align: center;
+    }
+    &__text{
+        margin-top: px-to-rem(30px);
+        font-size: space-to-clamp(14,15,375,1440);
+        line-height: 1.8;
+        letter-spacing: .05em;
+    }
+    &__btn{
+        margin-top: px-to-rem(30px);
+    }
+}
+
+// contact-page
+.p-contact-form{
+    padding: space-to-clamp(40,70,375,1440) 0;
+    &__head{
+        margin-bottom: space-to-clamp(30,40,375,1440);
+        text-align: center;
+        font-size: space-to-clamp(14,15,375,1440);
+        line-height: 1.8;
+        letter-spacing: .05em;
+    }
+    &__body{
+        max-width: 750px;
+        margin: 0 auto;
+        background-color: #F7F7F7;
+        padding: space-to-clamp(30,90,375,1440);
+    }
+    
+}

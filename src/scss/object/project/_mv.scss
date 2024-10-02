@@ -1,0 +1,108 @@
+@use"../../foundation/_mixin.scss" as *;
+
+.p-mv{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/dist/images/hero.webp);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: space-to-clamp(812,767,375,1440);
+    &__inner{
+     text-align: center;
+     padding: 0 px-to-rem(30px);
+     @include responsive("phone"){
+      text-align: left;
+     }
+    }
+    &__title{
+     margin-bottom: px-to-rem(20px);
+     font-size: space-to-clamp(40,72,375,1440);
+     font-weight: bold;
+     color: var(--color-text);
+     letter-spacing: .05em;
+    }
+    &__subtitle{
+      margin-bottom: space-to-clamp(30,50,375,1440);
+      font-size: space-to-clamp(16,24,375,1440);
+      color: var(--color-text);
+      line-height: 1.8;
+      letter-spacing: .1em;
+    }
+
+    &__scroll{
+        position: absolute;
+        right: space-to-clamp(15,30,375,1440);
+        bottom: 0;
+        overflow: hidden;
+        writing-mode: vertical-rl; /* 縦書きにする */
+        color: var(--color-text);
+        padding: px-to-rem(10px) px-to-rem(10px) px-to-rem(90px);
+        letter-spacing: .05em;
+      
+        &::after{
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          width: 1px;
+          height: 80px;
+          background: #fff;
+          content: "";
+          animation: scrollDownLine 1.5s infinite;
+      }
+    }
+}
+
+
+// animation
+@keyframes scrollDownLine {
+  0% {
+    -webkit-transform: scale(1, 0);
+    transform: scale(1, 0);
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+  }
+  50% {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+  }
+  50.1% {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+    -webkit-transform-origin: 0 100%;
+    transform-origin: 0 100%;
+  }
+  100% {
+    -webkit-transform: scale(1, 0);
+    transform: scale(1, 0);
+    -webkit-transform-origin: 0 100%;
+    transform-origin: 0 100%;
+  }
+}
+
+// sub-mv
+.p-sub-mv{
+  background-image: url(/dist/images/hero.webp);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: space-to-clamp(180,240,375,1440);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__title{
+    text-align: center;
+    font-size: space-to-clamp(30,36,375,1440);
+    font-weight: bold;
+    color: var(--color-text);
+  }
+  &__subtitle{
+    display: block;
+    font-size: px-to-rem(13px);
+    color: var(--color-text);
+  }
+}

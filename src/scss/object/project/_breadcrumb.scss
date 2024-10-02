@@ -1,0 +1,29 @@
+@use"../../foundation/_mixin.scss" as *;
+
+.p-breadcrumb{
+ position: sticky;
+ top: 64px;
+ z-index: 1;
+ padding: 8px 0;
+ background-color: #F7F7F7;
+ @include responsive("phone"){
+    padding: 5px 0;
+ }
+ &__list{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: flex;
+ }
+ &__item{
+    display: inline;
+    list-style: none;
+    text-transform: uppercase;
+    font-size: space-to-clamp(11,12,375,1440);
+  &:nth-child(1)::after{
+    padding: 0 0.5em;
+      content: ">";
+      color: #555;
+  }
+ }
+}

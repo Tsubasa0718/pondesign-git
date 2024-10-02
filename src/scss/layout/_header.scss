@@ -1,0 +1,64 @@
+@use"../foundation/_mixin.scss" as *;
+.l-header{
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ position: fixed;
+ top: 0;
+ right: 0;
+ z-index: 100;
+ width: 100%;
+ height: space-to-clamp(64,86,375,1440);
+ padding: space-to-clamp(25,30,375,1440);
+ transition: .3s all;
+ &__nav{
+    @include responsive("phone"){
+       display: none;
+       position: fixed;
+       top: 0;
+       right: 0;
+       z-index: 990;
+       width: 100%;
+       height: 100%;
+       background-image: linear-gradient(to right, #7633a4 0%, #250d65 51%, #7633a4 100%);
+    }
+ }
+ &__nav-list{
+   display: flex;
+   @include responsive("phone"){
+    padding: px-to-rem(200px) 0;
+    flex-direction: column;
+    align-items: center;
+   }
+ }
+ &__nav-item{
+  color: var(--color-text);
+  font-weight: bold;
+  a{
+    position: relative;
+    &::after{
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -5px; /* テキストの下に下線を配置 */
+        width: 0;
+        height: 2px; /* 下線の太さ */
+        background-color: var(--color-text); /* 下線の色 */
+        transition: width 0.3s ease; /* アニメーションの速度と効果 */
+    }
+    &:hover::after{
+        width: 100%; /* hover時に下線を全幅にする */
+    }
+  }
+ }
+ &__nav-item:not(:first-of-type){
+    margin-left: px-to-rem(25px);
+    @include responsive("phone"){
+      margin: px-to-rem(20px) 0 0 0;
+    }
+ }
+ &.active{
+  background-color: var(--color-header);
+  height: 64px;
+ }
+}

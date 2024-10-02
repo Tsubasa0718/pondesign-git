@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PON DESIGNは、新規サイト制作や運用、アプリ開発に強いWeb制作会社です。サイト作りはお客様の夢を叶えること。だからこそ成果を出すサイトを全力でお作りします。">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="PON DESIGN">
+    <meta property="og:url" content="https://pondesign-sample.netlify.app/">
+    <meta property="og:description" content="PON DESIGNは、新規サイト制作や運用、アプリ開発に強いWeb制作会社です。サイト作りはお客様の夢を叶えること。だからこそ成果を出すサイトを全力でお作りします。">
+    <meta property="og:image" content="https://pondesign-sample.netlify.app/images/ogp.webp">
+    <!-- ogp -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- googlefonts -->
+    <title>PON DESIGN</title>
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <!-- favicon -->
+<script defer src="bundle.js"></script><link href="./css/style.css" rel="stylesheet"></head>
+<body>
+    <!-- header -->
+    <header class="l-header">
+        <h1 class="l-header__logo">
+            <a href="index.html">
+                <img src="./images/logo.webp" alt="PON DESIGNのサイトロゴ">
+            </a>
+        </h1>
+       <nav class="l-header__nav js-nav">
+        <ul class="l-header__nav-list">
+            <li class="l-header__nav-item"><a href="news.html">NEWS</a></li>
+            <li class="l-header__nav-item"><a href="service.html">SERVICE</a></li>
+            <li class="l-header__nav-item"><a href="works.html">WORKS</a></li>
+            <li class="l-header__nav-item"><a href="company.html">COMPANY</a></li>
+            <li class="l-header__nav-item"><a href="recruit.html">RECRUIT</a></li>
+            <li class="l-header__nav-item"><a href="contact.html">CONTACT</a></li>
+        </ul>
+       </nav>
+       <button class="c-menubtn l-sp-only" type="button" id="js-menubtn">
+        <span></span>
+        <span></span>
+        <span></span>
+       </button>
+    </header>
+    <!-- submv -->
+    <div class="p-sub-mv">
+      <div class="p-sub-mv__inner">
+          <h2 class="p-sub-mv__title">NEWS<span class="p-sub-mv__subtitle">お知らせ</span></h2>
+      </div>
+    </div>
+    <!-- breadcrumb -->
+     <div class="p-breadcrumb">
+        <div class="l-container">
+            <!-- パンくずリストの定義 -->
+            <ol itemscope itemtype="https://schema.org/BreadcrumbList" class="p-breadcrumb__list">
+               <!-- HOME -->
+                <!-- パンくずリストの一部である -->
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="p-breadcrumb__item">
+                    <a itemprop="item" href="." class="p-breadcrumb__link">
+                     <span itemprop="name">HOME</span>
+                    </a>
+                </li>
+                <!-- NEWS -->
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="p-breadcrumb__item">
+                    <a itemprop="item" href="news.html" class="p-breadcrumb__link">
+                     <span itemprop="name">NEWS</span>
+                    </a>
+                    <!-- 現在位置と項目２ -->
+                    <meta itemprop="position" content="2">
+                </li>
+            </ol>
+        </div>
+     </div>
+     <main class="l-main">
+        <!-- news-page -->
+       <div class="p-news-page">
+        <div class="l-container">
+          <div class="p-news-page__inner">
+            <div class="p-news-page__body">
+                <ul class="p-news-page__list">
+                 
+                  <li class="p-news-page__item">
+                    <div class="p-news-page__head">
+                        <time datetime="2030-02-01">2030.02.01</time>
+                        <div class="p-news-page__label"><span class="p-news-page__category">お知らせ</span></div>
+                    </div>
+                    <a href="news-article.html" class="p-news-page__link">Webデザインニュースサイト「ウェブマガジン」に取材いただきました</a>
+                </li>
+                <li class="p-news-page__item">
+                  <div class="p-news-page__head">
+                      <time datetime="2030-01-25">2030.01.25</time>
+                      <div class="p-news-page__label"><span class="p-news-page__category">制作実績</span></div>
+                  </div>
+                  <a href="news-article.html" class="p-news-page__link">Smoothiesta様のWebサイトを制作いたしました</a>
+                </li>
+                <li class="p-news-page__item">
+                  <div class="p-news-page__head">
+                      <time datetime="2030-01-20">2030.01.20</time>
+                      <div class="p-news-page__label"><span class="p-news-page__category">採用</span></div>
+                  </div>
+                  <a href="news-article.html" class="p-news-page__link">Webデザイナーを１名募集中です！</a>
+                </li>
+                     
+                <li class="p-news-page__item">
+                  <div class="p-news-page__head">
+                    <time datetime="2030-01-20">2030.01.20</time>
+                    <div class="p-news-page__label"><span class="p-news-page__category">採用</span></div>
+                </div>
+                  <a href="news-article.html" class="p-news-page__link wrap-text">
+                    （折り返しテキストの場合）テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります 
+
+                  </a>
+                </li>
+                     
+                      <li class="p-news-page__item">
+                        <div class="p-news-page__head">
+                            <time datetime="2030-02-01">2030.02.01</time>
+                            <div class="p-news-page__label"><span class="p-news-page__category">お知らせ</span></div>
+                        </div>
+                        <a href="news-article.html" class="p-news-page__link">テキストが入りますテキストが入りますテキストが入りますテキストが入ります</a>
+                      </li>
+                      <li class="p-news-page__item">
+                        <div class="p-news-page__head">
+                            <time datetime="2030-02-01">2030.02.01</time>
+                            <div class="p-news-page__label"><span class="p-news-page__category">お知らせ</span></div>
+                        </div>
+                        <a href="news-article.html" class="p-news-page__link">テキストが入りますテキストが入りますテキストが入りますテキストが入ります</a>
+                      </li>
+                      <li class="p-news-page__item">
+                        <div class="p-news-page__head">
+                            <time datetime="2030-02-01">2030.02.01</time>
+                            <div class="p-news-page__label"><span class="p-news-page__category">お知らせ</span></div>
+                        </div>
+                        <a href="news-article.html" class="p-news-page__link">テキストが入りますテキストが入りますテキストが入りますテキストが入ります</a>
+                      </li>
+                      <li class="p-news-page__item">
+                        <div class="p-news-page__head">
+                            <time datetime="2030-02-01">2030.02.01</time>
+                            <div class="p-news-page__label"><span class="p-news-page__category">お知らせ</span></div>
+                        </div>
+                        <a href="news-article.html" class="p-newspage__link">テキストが入りますテキストが入りますテキストが入りますテキストが入ります</a>
+                      </li>
+                      <li class="p-news-page__item">
+                        <div class="p-news-page__head">
+                            <time datetime="2030-02-01">2030.02.01</time>
+                            <div class="p-news-page__label"><span class="p-news-page__category">お知らせ</span></div>
+                        </div>
+                        <a href="news-article.html" class="p-news-page__link">テキストが入りますテキストが入りますテキストが入りますテキストが入ります</a>
+                      </li>
+                      <li class="p-news-page__item">
+                        <div class="p-news-page__head">
+                            <time datetime="2030-02-01">2030.02.01</time>
+                            <div class="p-news-page__label"><span class="p-news-page__category">お知らせ</span></div>
+                        </div>
+                        <a href="news-article.html" class="p-newspage__link">テキストが入りますテキストが入りますテキストが入りますテキストが入ります</a>
+                      </li>
+                      <li class="p-news-page__item">
+                        <div class="p-news-page__head">
+                            <time datetime="2030-02-01">2030.02.01</time>
+                            <div class="p-news-page__label"><span class="p-news-page__category">お知らせ</span></div>
+                        </div>
+                        <a href="news-article.html" class="p-news-page__link">テキストが入りますテキストが入りますテキストが入りますテキストが入ります</a>
+                      </li>
+                      <li class="p-news-page__item">
+                        <div class="p-news-page__head">
+                            <time datetime="2030-02-01">2030.02.01</time>
+                            <div class="p-news-page__label"><span class="p-news-page__category">お知らせ</span></div>
+                        </div>
+                        <a href="news-article.html" class="p-news-page__link">テキストが入りますテキストが入りますテキストが入りますテキストが入ります</a>
+                      </li>
+                      <li class="p-news-page__item">
+                        <div class="p-news-page__head">
+                            <time datetime="2030-02-01">2030.02.01</time>
+                            <div class="p-news-page__label"><span class="p-news-page__category">お知らせ</span></div>
+                        </div>
+                        <a href="news-article.html" class="p-news-page__link">テキストが入りますテキストが入りますテキストが入りますテキストが入ります</a>
+                      </li>
+                      <li class="p-news-page__item">
+                        <div class="p-news-page__head">
+                            <time datetime="2030-02-01">2030.02.01</time>
+                            <div class="p-news-page__label"><span class="p-news-page__category">お知らせ</span></div>
+                        </div>
+                        <a href="news-article.html" class="p-news-page__link">テキストが入りますテキストが入りますテキストが入りますテキストが入ります</a>
+                      </li>
+                      <li class="p-news-page__item">
+                        <div class="p-news-page__head">
+                            <time datetime="2030-02-01">2030.02.01</time>
+                            <div class="p-news-page__label"><span class="p-news-page__category">お知らせ</span></div>
+                        </div>
+                        <a href="news-article.html" class="p-news-page__link">テキストが入りますテキストが入りますテキストが入りますテキストが入ります</a>
+                      </li>
+                      <li class="p-news-page__item">
+                        <div class="p-news-page__head">
+                            <time datetime="2030-02-01">2030.02.01</time>
+                            <div class="p-news-page__label"><span class="p-news-page__category">お知らせ</span></div>
+                        </div>
+                        <a href="news-article.html" class="p-news-page__link">テキストが入りますテキストが入りますテキストが入りますテキストが入ります</a>
+                      </li>
+                    </ul>
+                    <div class="p-news-page__pagenetion">
+                        <span>1</span>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                    </div>
+                 </div>
+            </div>
+        </div>
+          </div>
+        <!-- contact -->
+        <section class="p-contact">
+          <div class="l-container">
+            <div class="p-contact__wrapper">
+              <h2 class="c-section-title">CONTACT<span class="c-section-subtitle">お問い合わせ</span></h2>
+              <div class="p-contact__text">
+                  <p>
+                      Webサイトの制作のご依頼やお見積りなど、お気軽にご相談ください。
+                  </p>
+              </div>
+              <div class="p-contact__btn">
+                  <a class="c-btn" href="contact.html">MORE</a>
+              </div>
+          </div>
+            </div>
+       </section>
+    </main>
+    <!-- footer -->
+     <footer class="l-footer">
+        <ul class="l-footer__list">
+            <li class="l-footer__item"><a href="index.html">HOME</a></li>
+            <li class="l-footer__item"><a href="news.html">NEWS</a></li>
+            <li class="l-footer__item"><a href="service.html">SERVICE</a></li>
+            <li class="l-footer__item"><a href="works.html">WORKS</a></li>
+            <li class="l-footer__item"><a href="company.html">COMPANY</a></li>
+            <li class="l-footer__item"><a href="recruit.html">RECRUIT</a></li>
+            <li class="l-footer__item"><a href="contact.html">CONTACT</a></li>
+        </ul>
+        <div class="l-footer__copy">
+            <small>© PON DESIGN</small>
+        </div>
+        <div class="l-footer__link">
+            <a href="https://webdesigner-go.com/coding-practice/">無料コーディング練習所</a>
+        </div>
+     </footer>
+     <button class="c-side-btn">
+        <span></span>
+     </button>
+</body>
+</html>

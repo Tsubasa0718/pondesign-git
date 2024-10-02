@@ -1,0 +1,24 @@
+@use"./_mixin.scss" as *;
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+font-size: 100%;
+font-family: "Montserrat","Noto Sans JP", "Arial","Hiragino Kaku Gothic ProN", "Hiragino Sans",
+    "Meiryo", sans-serif;
+}
+
+img{
+ max-width: 100%;
+ height: auto;
+ vertical-align: bottom;
+}
+
+:root{
+  --color-main: #391E88;
+  --color-text: #fff;
+  --color-header: #21054D;
+
+}

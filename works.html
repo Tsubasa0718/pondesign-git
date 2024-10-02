@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PON DESIGNは、新規サイト制作や運用、アプリ開発に強いWeb制作会社です。サイト作りはお客様の夢を叶えること。だからこそ成果を出すサイトを全力でお作りします。">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="PON DESIGN">
+    <meta property="og:url" content="https://pondesign-sample.netlify.app/">
+    <meta property="og:description" content="PON DESIGNは、新規サイト制作や運用、アプリ開発に強いWeb制作会社です。サイト作りはお客様の夢を叶えること。だからこそ成果を出すサイトを全力でお作りします。">
+    <meta property="og:image" content="https://pondesign-sample.netlify.app/images/ogp.webp">
+    <!-- ogp -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- googlefonts -->
+    <title>PON DESIGN</title>
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <!-- favicon -->
+</head>
+<body>
+    <!-- header -->
+    <header class="l-header">
+        <h1 class="l-header__logo">
+            <a href="index.html">
+                <img src="./images/logo.webp" alt="PON DESIGNのサイトロゴ">
+            </a>
+        </h1>
+       <nav class="l-header__nav js-nav">
+        <ul class="l-header__nav-list">
+            <li class="l-header__nav-item"><a href="news.html">NEWS</a></li>
+            <li class="l-header__nav-item"><a href="service.html">SERVICE</a></li>
+            <li class="l-header__nav-item"><a href="works.html">WORKS</a></li>
+            <li class="l-header__nav-item"><a href="company.html">COMPANY</a></li>
+            <li class="l-header__nav-item"><a href="recruit.html">RECRUIT</a></li>
+            <li class="l-header__nav-item"><a href="contact.html">CONTACT</a></li>
+        </ul>
+       </nav>
+       <button class="c-menubtn l-sp-only" type="button" id="js-menubtn">
+        <span></span>
+        <span></span>
+        <span></span>
+       </button>
+    </header>
+    <!-- submv -->
+    <div class="p-sub-mv">
+      <div class="p-sub-mv__inner">
+          <h2 class="p-sub-mv__title">SERVICE<span class="p-sub-mv__subtitle">お知らせ</span></h2>
+      </div>
+    </div>
+    <!-- breadcrumb -->
+     <div class="p-breadcrumb">
+        <div class="l-container">
+            <!-- パンくずリストの定義 -->
+            <ol itemscope itemtype="https://schema.org/BreadcrumbList" class="p-breadcrumb__list">
+               <!-- HOME -->
+                <!-- パンくずリストの一部である -->
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="p-breadcrumb__item">
+                    <a itemprop="item" href="." class="p-breadcrumb__link">
+                     <span itemprop="name">HOME</span>
+                    </a>
+                </li>
+                <!-- NEWS -->
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="p-breadcrumb__item">
+                    <a itemprop="item" href="works.html" class="p-breadcrumb__link">
+                     <span itemprop="name">works</span>
+                    </a>
+                    <!-- 現在位置と項目２ -->
+                    <meta itemprop="position" content="2">
+                </li>
+            </ol>
+        </div>
+     </div>
+     <main class="l-main">
+        <!-- works-page -->
+       <div class="p-works-page">
+         <div class="l-container">
+            <div class="p-works-page__wrapper">
+                <figure class="p-works-page_image">
+                    <img src="./images/work-01.webp" alt="制作実績画像1">
+                    <figcaption class="p-works-page__caption">
+                        Smoothiesta 様
+                    </figcaption>
+                </figure>
+                <figure class="p-works-page_image">
+                    <img src="./images/work-02.webp" alt="制作実績画像2">
+                    <figcaption class="p-works-page__caption">
+                        Web Conference 様 
+                    </figcaption>
+                </figure>
+                <figure class="p-works-page_image">
+                    <img src="./images/work-03.webp" alt="制作実績画像3">
+                    <figcaption class="p-works-page__caption">
+                        LAMINA 様
+                    </figcaption>
+                </figure>
+                <figure class="p-works-page_image">
+                    <img src="./images/work-04.webp" alt="制作実績画像4">
+                    <figcaption class="p-works-page__caption">
+                        CITYLab 様
+                    </figcaption>
+                </figure>
+                <figure class="p-works-page_image">
+                    <img src="./images/work-05.webp" alt="制作実績画像5">
+                    <figcaption class="p-works-page__caption">
+                        TABILOG 様
+                    </figcaption>
+                </figure>
+            </div>
+         </div>
+        </div>
+         <!-- contact -->
+         <section class="p-contact">
+            <div class="l-container">
+              <div class="p-contact__wrapper">
+                <h2 class="c-section-title">CONTACT<span class="c-section-subtitle">お問い合わせ</span></h2>
+                <div class="p-contact__text">
+                    <p>
+                        Webサイトの制作のご依頼やお見積りなど、お気軽にご相談ください。
+                    </p>
+                </div>
+                <div class="p-contact__btn">
+                    <a class="c-btn" href="contact.html">MORE</a>
+                </div>
+            </div>
+              </div>
+         </section>
+    </main>
+    <!-- footer -->
+     <footer class="l-footer">
+        <ul class="l-footer__list">
+            <li class="l-footer__item"><a href="index.html">HOME</a></li>
+            <li class="l-footer__item"><a href="news.html">NEWS</a></li>
+            <li class="l-footer__item"><a href="service.html">SERVICE</a></li>
+            <li class="l-footer__item"><a href="works.html">WORKS</a></li>
+            <li class="l-footer__item"><a href="company.html">COMPANY</a></li>
+            <li class="l-footer__item"><a href="recruit.html">RECRUIT</a></li>
+            <li class="l-footer__item"><a href="contact.html">CONTACT</a></li>
+        </ul>
+        <div class="l-footer__copy">
+            <small>© PON DESIGN</small>
+        </div>
+        <div class="l-footer__link">
+            <a href="https://webdesigner-go.com/coding-practice/">無料コーディング練習所</a>
+        </div>
+     </footer>
+     <button class="c-side-btn">
+        <span></span>
+     </button>
+</body>
+</html>

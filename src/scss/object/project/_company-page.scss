@@ -1,0 +1,61 @@
+@use"../../foundation/_mixin" as *;
+
+.p-company-ceo{
+    &__wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      @include responsive("phone"){
+        flex-direction: column;
+      }
+    }
+    &__text{
+        flex: 1 0 50%;
+        margin-left: px-to-rem(50px);
+        font-size: space-to-clamp(14,15,375,1440);
+        line-height: 1.8;
+        letter-spacing: .05em;
+       p:nth-child(1),
+       p:nth-child(2){
+         margin-bottom: px-to-rem(20px);   
+        }
+        @include responsive("phone"){
+         margin:px-to-rem(20px) 0 0 0;
+        }
+    }
+}
+.p-company-profile{
+    padding: space-to-clamp(40,70,375,1440) 0;
+  &__title{
+    margin-bottom: px-to-rem(30px);
+    font-size: space-to-clamp(24,32,375,1440);
+    font-weight: bold;
+    color: var(--color-main);
+    letter-spacing: .05em;
+    text-align: center;
+    @include responsive("phone"){
+        margin-bottom: px-to-rem(50px);
+    }
+  }
+ 
+}
+
+.p-company-access{
+  padding-bottom: px-to-rem(70px);
+  iframe{
+    width: 100%;
+    height: space-to-clamp(240,400,375,1445);
+  }
+  &__link{
+    margin-top: px-to-rem(5px);
+    display: flex;
+    justify-content: start;
+
+    a{
+      font-size: px-to-rem(14px);
+      line-height: 1.8;
+      letter-spacing: .05em;
+      color: #240B6B;
+    }
+  }
+}

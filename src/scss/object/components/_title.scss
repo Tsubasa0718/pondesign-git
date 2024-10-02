@@ -1,0 +1,12 @@
+@use"../../foundation/_mixin.scss" as *;
+
+.c-section-title{
+    font-size: space-to-clamp(30,36,375,1440);
+    font-weight: bold;
+    color: var(--color-main);
+    margin-bottom: px-to-rem(5px);
+  }
+  .c-section-subtitle{
+    display: block;
+    font-size: px-to-rem(13px);
+  }

@@ -1,0 +1,59 @@
+@use"../../foundation/_mixin.scss" as *;
+
+.c-table01{
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+  tr{
+    border-bottom: solid 1px #ddd;
+  }
+  th,
+  td{
+   text-align: left;
+   padding: px-to-rem(30px) px-to-rem(10px);
+   @include responsive("phone"){
+    display: block;
+    padding: 0;
+   }
+  }
+  th{
+  font-weight: 500;
+  width: 20%;
+  @include responsive("phone"){
+    width: 100%;
+    margin: px-to-rem(20px) 0 px-to-rem(5px) 0;
+  }
+}
+
+  td{
+    @include responsive("phone"){
+        margin-bottom: px-to-rem(20px);
+    }
+  }
+}
+
+.c-table02{
+  @extend .c-table01;
+  max-width: 920px;
+  margin: 0 auto;
+  font-size: space-to-clamp(14,15,375,1440);
+  line-height: 1.7;
+  letter-spacing: .05em;
+  th,
+  td{
+   @include responsive("phone"){
+    display: block;
+    padding: 0 px-to-rem(20px);
+   }
+  }
+  td{
+    ul{
+      margin-top: px-to-rem(10px);
+      li::before{
+        content: "・";
+        margin-right: 8px; /* テキストとの間にスペースを追加 */
+      }
+    }
+    
+  }
+}

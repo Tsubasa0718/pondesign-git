@@ -1,0 +1,94 @@
+@use"../../foundation/_mixin.scss" as *;
+
+.p-recruit-message{
+    background-image: url(/dist/images/recruit_bg.webp);
+   
+    background-position: center center;
+    background-size: cover;
+    &__wrapper{
+        padding: space-to-clamp(60,90,375,1440) 0 px-to-rem(40px) 0;
+        text-align: center;
+    }
+    &__title{
+        margin-bottom: px-to-rem(10px);
+        font-size:  space-to-clamp(48,72,375,1440);
+        font-weight: bold;
+        color: var(--color-main);
+        letter-spacing: .05em;
+        @include responsive("phone"){
+            line-height: 1.2;
+        }
+    }
+    &__subtitle{
+        margin-bottom: px-to-rem(20px);
+        font-size:  space-to-clamp(18,32,375,1440);
+        color: var(--color-main);
+        letter-spacing: .05em;
+        line-height: 1.8;
+    }
+    &__text{
+        line-height: 1.8;
+        letter-spacing: .05em;
+    }
+    &__image{
+        img{
+            clip-path: polygon(0 16%, 100% 0, 100% 84%, 0% 100%);
+        }
+    }
+    // job
+    &__job{
+        padding: space-to-clamp(40,70,375,1440) 0;
+    }
+    &__job--title{
+        margin-bottom: px-to-rem(20px);
+        text-align: center;
+        font-size: space-to-clamp(24,32,375,1440);
+        font-weight: bold;
+        color: var(--color-main);
+        letter-spacing: .05em;
+
+    }
+    &__job--tab{
+        max-width: 1110px;
+        margin: 0 auto;
+        padding: space-to-clamp(30,60,375,1440) 0;
+        border: solid 1px #B067CF;
+    }
+    &__job--tabtitle{
+        margin-bottom: px-to-rem(30px);
+        text-align: center;
+        font-size: space-to-clamp(20,24,375,1440);
+        font-weight: bold;
+        line-height: 1.8;
+        letter-spacing: .05em;
+    }
+    &__job--link{
+        margin-top: space-to-clamp(40,50,375,1440);
+        text-align: center;
+    }
+    &__job--note{
+        display: block;
+        margin-top: px-to-rem(5px);
+        font-size: px-to-rem(12px);
+        line-height: 1.8;
+        letter-spacing: .05em;
+    }
+    // video
+    &__video{
+        padding: space-to-clamp(40,70,375,1440) 0;
+    }
+    &__video--title{
+        margin-bottom: space-to-clamp(30,40,375,1440);
+        text-align: center;
+        font-size: space-to-clamp(24,32,375,1440);
+        font-weight: bold;
+        color: var(--color-main);
+        letter-spacing: .05em;
+    }
+    &__video--video{
+        iframe{
+            width: 100%;
+            height: space-to-clamp(194,624,375,1440);
+        }
+    }
+}

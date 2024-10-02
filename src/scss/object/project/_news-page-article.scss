@@ -1,0 +1,72 @@
+@use"../../foundation/_mixin.scss" as *;
+
+.p-news-article{
+    padding: space-to-clamp(40,70,375,1440);
+    &__inner{
+        max-width: 780px;
+        margin: 0 auto;
+    }
+    &__post-title{
+    font-size: space-to-clamp(22,32,375,1440);
+    line-height: 1.5;
+    letter-spacing: .05em;
+    }
+    &__post-info{
+        margin-bottom: space-to-clamp(20,30,375,1440);
+        display: flex;
+        align-items: center;
+        font-size: space-to-clamp(10,13,375,1440);
+        line-height: 1.6;
+        letter-spacing: .05em;
+    }
+    &__post-label{
+        width: 80px;
+        padding: px-to-rem(2px) 0;
+        text-align: center;
+        background-color: #E8E8E8;
+        border-radius: 20px;
+        margin-left: px-to-rem(10px);
+    }
+    &__post-text:nth-child(1),
+    &__post-text:nth-child(4){
+        margin-top: px-to-rem(30px);
+    }
+    &__post-head{
+      margin-top: space-to-clamp(40,60,375,1440);
+      font-size: space-to-clamp(18,24,375,1440);
+      font-weight: bold;
+      line-height: 1.6;
+      letter-spacing: .05em;
+    }
+    &__post-subhead{
+        margin-top: px-to-rem(40px);
+        font-size: px-to-rem(15px);
+        font-weight: bold;
+        line-height: 1.8;
+        letter-spacing: .01.8em;
+    }
+    &__post-text{
+        max-width: 740px;
+        line-height: 1.8;
+        margin-top: px-to-rem(20px);
+        font-size: space-to-clamp(14,16,375,1440);
+    }
+    &__post-pager{
+        max-width: 740px;
+        margin-top: px-to-rem(40px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: space-to-clamp(12,14,375,1440);
+        color: #391E88;
+        border-top: solid 1px #B8AED5;
+        border-bottom: solid 1px #B8AED5;
+    }
+    &__post-pagerbox{
+        padding: px-to-rem(25px) px-to-rem(20px);
+        transition: .3s all;
+    &:hover{
+        background-color:rgba(57, 30, 136, 0.22)
+    }
+    }
+}
