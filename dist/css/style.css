@@ -821,6 +821,7 @@ th {
   background: linear-gradient(transparent 70%, #f5f534 0%);
 }
 .p-company__message-title {
+  margin-top: clamp(3.75rem, 2.8697183099rem + 3.7558685446vw, 6.25rem);
   font-size: clamp(1.5rem, 1.323943662rem + 0.7511737089vw, 2rem);
   font-weight: bold;
   line-height: 1.8;
@@ -1062,7 +1063,6 @@ th {
   line-height: 1.8;
   letter-spacing: 0.05em;
 }
-
 .p-company-ceo__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1743,6 +1743,9 @@ th {
   }
   .p-service-page__title {
     text-align: center;
+  }
+  .p-company-ceo {
+    margin-top: 3.75rem;
   }
   .p-company-ceo__wrapper {
     -webkit-box-orient: vertical;
