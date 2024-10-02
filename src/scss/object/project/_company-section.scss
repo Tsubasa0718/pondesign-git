@@ -21,6 +21,7 @@
         background: linear-gradient(transparent 70%, #f5f534 0%)
     }
     &__message-title{
+        margin-top: space-to-clamp(60,100,375,1440);
        font-size: space-to-clamp(24,32,375,1440);
        font-weight: bold;
        line-height: 1.8;
